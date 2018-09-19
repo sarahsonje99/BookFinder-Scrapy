@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="700.0" opacity="0.64" pickOnBounds="true">
+         <image>
+            <Image url="file:/home/shloka/eclipse-workspace/OOPpro/src/489479520.jpg" />
+         </image>
+      </ImageView>
+    <Button fx:id="search" layoutX="271.0" layoutY="348.0" mnemonicParsing="false" onAction="#goToScene2" prefHeight="34.0" prefWidth="151.0" text="Search For A Book!" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="124.0" layoutY="147.0" text="Welcome To BookFinder!" textAlignment="CENTER" textFill="#2a169c">
+         <font>
+            <Font name="Tahoma Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="242.0" prefHeight="66.0" prefWidth="654.0" text="A comparator that helps you find the book you want for the lowest cost.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
