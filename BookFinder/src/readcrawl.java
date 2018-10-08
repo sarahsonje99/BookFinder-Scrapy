@@ -5,7 +5,7 @@ public class readcrawl {
 	
 	    public void AmazonCrawl(String key){
 	    	    try {
-	                Process p = Runtime.getRuntime().exec("/home/shloka/Desktop/Amazonshell.sh "+key);
+	                Process p = Runtime.getRuntime().exec("../Amazonshell.sh "+key);
 	                BufferedReader in = new BufferedReader(new InputStreamReader(
 	                        p.getInputStream()));
 	                System.out.println(in.readLine());
@@ -14,7 +14,7 @@ public class readcrawl {
 	    
 	    public void FlipkartCrawl(String key){
     	    try {
-                Process p = Runtime.getRuntime().exec("/home/shloka/Desktop/Flipkartshell.sh "+key);
+                Process p = Runtime.getRuntime().exec("../Flipkartshell.sh "+key);
                 BufferedReader in = new BufferedReader(new InputStreamReader(
                         p.getInputStream()));
                 System.out.println(in.readLine());
@@ -22,7 +22,7 @@ public class readcrawl {
     }  
 	    public void eBayCrawl(String key){
     	    try {
-                Process p = Runtime.getRuntime().exec("/home/shloka/Desktop/Ebayshell.sh "+key);
+                Process p = Runtime.getRuntime().exec("../Ebayshell.sh "+key);
                 BufferedReader in = new BufferedReader(new InputStreamReader(
                         p.getInputStream()));
                 System.out.println(in.readLine());

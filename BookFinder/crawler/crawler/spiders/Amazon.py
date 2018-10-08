@@ -9,10 +9,7 @@ class QuotesSpider(scrapy.Spider):
         self.start_urls = ['https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={}'.format(category)]
         #self.domain = domain
 
-    # url = 'https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={}', category
-    # url = str(url)
-    # # self.domain = domaincategory
-    # start_urls = [url]
+   
     def parse(self, response):
         for result in response.css('li.s-result-item'):
             title = result.css('a.a-link-normal h2::text').extract_first()
@@ -28,6 +25,4 @@ class QuotesSpider(scrapy.Spider):
                 'Title': title,
                 'Price': price,
                 'BuyUrl': buyurl
-                #'author': str(quote.css('small.author::text').extract_first()),
-                #'tags': str(quote.css('div.tags a.tag::text').extract()),
-            }
+                }

@@ -11,7 +11,7 @@
    <children>
       <ImageView fitHeight="600.0" fitWidth="700.0" opacity="0.64" pickOnBounds="true">
          <image>
-            <Image url="file:/home/shloka/eclipse-workspace/OOPpro/src/489479520.jpg" />
+            <Image url="file:489479520.jpg" />
          </image>
       </ImageView>
     <Button fx:id="search" layoutX="271.0" layoutY="348.0" mnemonicParsing="false" onAction="#goToScene2" prefHeight="34.0" prefWidth="151.0" text="Search For A Book!" />

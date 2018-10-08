@@ -77,7 +77,7 @@ public class MainController {
 		crawler.AmazonCrawl(searchString.getText());
 		//use 'searchString.getText()' as keyphrase
 		try{
-		t.setText(filereader.readIt("/home/shloka/Desktop/crawler/opAmazon.csv"));
+		t.setText(filereader.readIt("../crawler/opAmazon.csv"));
 		scrollpane.setContent(t);
 		}catch(Exception e1) {System.out.println(e1);}
 						
@@ -91,7 +91,7 @@ public class MainController {
 		crawler.FlipkartCrawl(searchString.getText());
 		//use 'searchString.getText()' as keyphrase
 		try{
-		t.setText(filereader.readIt("/home/shloka/Desktop/crawler/opFlipkart.csv"));
+		t.setText(filereader.readIt("../crawler/opFlipkart.csv"));
 		scrollpane.setContent(t);
 		}catch(Exception e1) {System.out.println(e1);}
 						
@@ -106,17 +106,13 @@ public class MainController {
 		crawler.eBayCrawl(searchString.getText());
 		//use 'searchString.getText()' as keyphrase
 		try{
-		t.setText(filereader.readIt("/home/shloka/Desktop/crawler/opEbay.csv"));
+		t.setText(filereader.readIt("../crawler/opEbay.csv"));
 		scrollpane.setContent(t);
 		}catch(Exception e1) {System.out.println(e1);}
 						
 	}
 	
 	//read to tableview
-	
-	
-	
-	
 	
 	
 
